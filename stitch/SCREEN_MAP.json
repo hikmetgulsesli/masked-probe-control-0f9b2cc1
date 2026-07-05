@@ -1,0 +1,11 @@
+[
+  {
+    "screenId": "d72f276f6e2445e8ae548d77e72aa050",
+    "name": "Status Utility - Masked Probe Control",
+    "type": "app-screen",
+    "description": "Status Utility - Masked Probe Control screen",
+    "surfaceIds": [
+      "SURF_STATUS_UTILITY"
+    ]
+  }
+]

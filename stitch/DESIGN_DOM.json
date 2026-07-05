@@ -1,0 +1,258 @@
+{
+  "generatedAt": "2026-07-05T11:24:37.283Z",
+  "screenCount": 1,
+  "screens": {
+    "d72f276f6e2445e8ae548d77e72aa050": {
+      "screenId": "d72f276f6e2445e8ae548d77e72aa050",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "bg-background",
+            "dark:bg-background",
+            "border-b",
+            "border-outline-variant",
+            "dark:border-outline-variant",
+            "flex",
+            "justify-between",
+            "items-center",
+            "w-full",
+            "px-margin-mobile"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-grow",
+            "flex",
+            "items-center",
+            "justify-center",
+            "pt-14",
+            "p-margin-mobile",
+            "md:p-margin-desktop",
+            "relative",
+            "overflow-hidden"
+          ],
+          "childCount": 32
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "refresh",
+          "classes": [
+            "p-2",
+            "hover:bg-surface-container-high",
+            "dark:hover:bg-surface-container-high",
+            "transition-colors",
+            "rounded",
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "active:scale-95",
+            "duration-150",
+            "group"
+          ],
+          "icon": "refresh",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "classes": [
+            "p-2",
+            "hover:bg-surface-container-high",
+            "dark:hover:bg-surface-container-high",
+            "transition-colors",
+            "rounded",
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "active:scale-95",
+            "duration-150",
+            "group"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Refresh Telemetrics",
+          "classes": [
+            "bg-primary-container",
+            "hover:bg-primary",
+            "text-on-primary-container",
+            "font-body-md",
+            "font-semibold",
+            "py-2.5",
+            "px-6",
+            "rounded",
+            "DEFAULT",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "transition-all",
+            "active:scale-95",
+            "shadow-lg",
+            "shadow-primary-container/20"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search...",
+          "placeholder": "Search...",
+          "name": "",
+          "classes": [
+            "bg-surface-container-high",
+            "border-outline-variant",
+            "rounded",
+            "px-3",
+            "py-1",
+            "text-on-surface",
+            "focus:outline-none",
+            "focus:border-primary"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "systemToggle",
+          "placeholder": "",
+          "name": "systemToggle",
+          "classes": [
+            "sr-only",
+            "peer"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [],
+      "cards": [],
+      "icons": [
+        "hub",
+        "refresh",
+        "settings",
+        "monitor_heart",
+        "speed",
+        "memory",
+        "schedule",
+        "sync"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "tertiary-container": "#66748a",
+        "on-primary": "#1500a8",
+        "error": "#ffb4ab",
+        "on-error-container": "#ffdad6",
+        "on-surface-variant": "#c7c4d8",
+        "primary-container": "#5d5cff",
+        "on-primary-fixed": "#09006b",
+        "on-tertiary-fixed-variant": "#3a485c",
+        "outline-variant": "#464556",
+        "tertiary": "#b9c7e0",
+        "surface-dim": "#101415",
+        "on-background": "#e0e3e5",
+        "on-secondary-fixed-variant": "#3c475a",
+        "secondary-fixed": "#d8e3fb",
+        "on-primary-fixed-variant": "#2b20d2",
+        "on-secondary": "#263143",
+        "on-tertiary-fixed": "#0d1c2f",
+        "surface-container-lowest": "#0b0f10",
+        "outline": "#908fa1",
+        "on-primary-container": "#fdf9ff",
+        "on-secondary-fixed": "#111c2d",
+        "surface-container-low": "#191c1e",
+        "secondary-fixed-dim": "#bcc7de",
+        "inverse-surface": "#e0e3e5",
+        "surface-tint": "#c1c1ff",
+        "secondary-container": "#3e495d",
+        "primary-fixed": "#e1dfff",
+        "surface-variant": "#323537",
+        "on-tertiary": "#233144",
+        "surface-container-high": "#272a2c",
+        "primary-fixed-dim": "#c1c1ff",
+        "tertiary-fixed-dim": "#b9c7e0",
+        "on-tertiary-container": "#fafaff",
+        "background": "#101415",
+        "surface-container-highest": "#323537",
+        "error-container": "#93000a",
+        "tertiary-fixed": "#d5e3fd",
+        "surface-container": "#1d2022",
+        "surface-bright": "#363a3b",
+        "inverse-on-surface": "#2d3133",
+        "inverse-primary": "#4643e9",
+        "secondary": "#bcc7de",
+        "on-surface": "#e0e3e5",
+        "on-secondary-container": "#aeb9d0",
+        "primary": "#c1c1ff",
+        "surface": "#101415",
+        "on-error": "#690005"
+      },
+      "fonts": [
+        "Inter",
+        "JetBrains Mono",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "button",
+          "label": "refresh",
+          "icon": "refresh",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "Refresh Telemetrics",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search...",
+          "type": "text",
+          "placeholder": "Search...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "systemToggle",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [],
+      "title": "Status Utility - Masked Probe Control"
+    }
+  }
+}
