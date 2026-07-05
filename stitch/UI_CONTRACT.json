@@ -1,0 +1,74 @@
+[
+  {
+    "screenId": "d72f276f6e2445e8ae548d77e72aa050",
+    "screenTitle": "Status Utility - Masked Probe Control",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "refresh",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 134
+      },
+      {
+        "type": "button",
+        "label": "Refresh Telemetrics",
+        "line": 225
+      },
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 128
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 154
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "refresh",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 134
+      },
+      {
+        "type": "button",
+        "label": "Refresh Telemetrics",
+        "line": 225
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 128
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 154
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 5,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
