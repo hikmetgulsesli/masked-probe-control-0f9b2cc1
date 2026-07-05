@@ -119,16 +119,19 @@ export const refreshBridge = (): void => {
       return getStore?.()?.state.records ?? [];
     },
     get actions() {
-      const store = getStore?.();
+      // Resolve `getStore()` *inside* each action body so destructured
+      // actions (`const { navigate } = window.app.actions`) always target
+      // the active store instance instead of the snapshot taken when the
+      // getter was first accessed.
       return {
-        navigate: (route, screenId) => store?.navigate(route, screenId),
-        selectRecord: (recordId) => store?.selectRecord(recordId),
-        setPanel: (panel) => store?.setPanel(panel),
-        upsertRecord: (record) => store?.upsertRecord(record),
-        removeRecord: (recordId) => store?.removeRecord(recordId),
-        setPreference: (patch) => store?.setPreference(patch),
-        resetPreferences: () => store?.resetPreferences(),
-        refreshTelemetry: () => store?.refreshTelemetry(),
+        navigate: (route, screenId) => getStore?.()?.navigate(route, screenId),
+        selectRecord: (recordId) => getStore?.()?.selectRecord(recordId),
+        setPanel: (panel) => getStore?.()?.setPanel(panel),
+        upsertRecord: (record) => getStore?.()?.upsertRecord(record),
+        removeRecord: (recordId) => getStore?.()?.removeRecord(recordId),
+        setPreference: (patch) => getStore?.()?.setPreference(patch),
+        resetPreferences: () => getStore?.()?.resetPreferences(),
+        refreshTelemetry: () => getStore?.()?.refreshTelemetry(),
       } as AppBridge["actions"];
     },
   };

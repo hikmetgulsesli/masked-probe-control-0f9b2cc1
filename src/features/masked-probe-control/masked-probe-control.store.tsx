@@ -37,16 +37,26 @@ export const maskedProbeReducer = (
   action: MaskedProbeAction,
 ): MaskedProbeState => {
   switch (action.type) {
-    case "app/bootstrap":
+    case "app/bootstrap": {
+      // Respect the hydrated lastSelectedRecordId preference when it still
+      // points at a known record. Without this branch, hydration runs first
+      // (selectedRecordId stays null), then bootstrap runs and overwrites
+      // the user's last selection with records[0]?.id.
+      const preferredId = state.preferences.lastSelectedRecordId;
+      const hasPreferred =
+        !!preferredId &&
+        action.payload.records.some((record) => record.id === preferredId);
       return {
         ...state,
         hydrated: true,
         records: action.payload.records,
         selectedRecordId:
           state.selectedRecordId ??
-          action.payload.records[0]?.id ??
-          null,
+          (hasPreferred
+            ? preferredId
+            : action.payload.records[0]?.id ?? null),
       };
+    }
     case "app/hydrated":
       return {
         ...state,
