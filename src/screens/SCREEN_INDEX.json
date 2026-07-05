@@ -1,0 +1,31 @@
+[
+  {
+    "screenId": "d72f276f6e2445e8ae548d77e72aa050",
+    "title": "Status Utility - Masked Probe Control",
+    "componentName": "StatusUtilityMaskedProbeControl",
+    "file": "src/screens/StatusUtilityMaskedProbeControl.tsx",
+    "buttons": 3,
+    "inputs": 2,
+    "links": 0,
+    "actions": [
+      {
+        "id": "refresh-1",
+        "kind": "button",
+        "label": "refresh",
+        "index": 0
+      },
+      {
+        "id": "settings-2",
+        "kind": "button",
+        "label": "settings",
+        "index": 1
+      },
+      {
+        "id": "refresh-telemetrics-3",
+        "kind": "button",
+        "label": "Refresh Telemetrics",
+        "index": 2
+      }
+    ]
+  }
+]
